@@ -21,7 +21,6 @@ except LookupError:
 def scraper():
     work = "https://api.nytimes.com/svc/movies/v2/reviews/all.json?api-key=rPRXhYeMN9E6OCRWs7704hENbvHAGmyK"
     res = requests.get(work)
-    # weenie juis wat dit doen nie, maar dit werk
     all = res.json()
     movie_data = all["results"]
     myLs = []
