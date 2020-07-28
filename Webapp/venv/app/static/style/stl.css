@@ -1,0 +1,39 @@
+body, html {
+    height: 100%;
+    display: grid;
+
+}
+*{
+    background-color: #c86f5e
+}
+
+#banner{
+     background-image: url("linkedin_banner_image_1.png");
+     height: 100%;
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-color: #c86f5e;
+     padding-top: 15%;
+     background-position: center;
+     margin-bottom: 0;
+     justify-content: center;
+     padding-bottom: 0;
+}
+#click{
+    color: #FFCCCC;
+}
+#nav-bar{
+    content: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #c86f5e;
+}
+
+p {
+    color: #FFCCCC;
+    text-align: center;
+}
+#change{
+
+}

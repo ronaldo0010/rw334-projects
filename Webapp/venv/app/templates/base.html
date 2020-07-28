@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Eats@visor</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+              crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/style/stl.css') }}">
+        <script src="https://kit.fontawesome.com/0a50506fa5.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body >
+
+          <span id="nav-bar" class="row fixed-top">
+              <a href="http://127.0.0.1:5002/" class= "col" id = "click" >Home</a>
+              <a href="http://127.0.0.1:5002/about" class= "col" id = "click" >About</a>
+              <a href="http://127.0.0.1:5002/random" class= "col " id = "click" onclick="allow()">Near Me</a>
+          </span>
+          <div class="banner jumbotron jumbotron-fluid" alt="Banner" id= "banner"> </div>
+
+          <div id="change">
+              <br>
+                {% block content %}
+                {% endblock%}
+            </div>
+    <style>
+        a:hover {
+            font-size: 130%;
+            text-decoration: none;
+           
+        }
+
+    </style>
+    <script>
+        function allow() {
+            const x = confirm("Allow Eats@visor to use your location?");
+
+            if (x != true) {
+                event.preventDefault();
+            }
+
+            return
+        }
+    </script>
+    </body>
+
+</html>

@@ -1,0 +1,143 @@
+{% extends "base.html"%}
+{% block content %}
+
+<style media="screen">
+  <style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  img {
+    height: 346px;
+    width: 346px;
+  }
+
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  .container{
+    padding-bottom: 2em;
+  }
+
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+
+  .title {
+    color: rgb(255,254,184);
+  }
+
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  </style>
+
+<div class="container">
+
+  <div class="about">
+    <h1 style="text-align:center">About Us</h1>
+    <p>The developers of this site is group of engineering and computer science
+      students at the university of Stellenbosch. This website is the product of
+      blood, sweat and all nighters fuled by champagne, cocaine, gasoline
+      and all the things in between.</p>
+    </div>
+
+    <h2 style="text-align:center">Our team</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img style= "width: 100%" src="https://scontent-jnb1-1.xx.fbcdn.net/v/t1.0-9/p960x960/41375460_1685743751548609_6336276135512375296_o.jpg?_nc_cat=111&_nc_sid=85a577&_nc_ohc=iTS1T7r3LGUAX_y-6er&_nc_ht=scontent-jnb1-1.xx&_nc_tp=6&oh=3d4930c9ef62b2c9156a8203c6b0fc4a&oe=5EB6C540" alt="Rijk">
+          <div class="container">
+
+            <h2 style="text-align:center">Rijk De Wet</h2>
+            <p class="title">Engineering student & front-end developer</p>
+
+            <p>20376316@sun.ac.za</p>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img style= "width: 100%" src="https://scontent-jnb1-1.xx.fbcdn.net/v/t1.0-9/27073138_1593192344051658_2149912850945236378_n.jpg?_nc_cat=103&_nc_sid=85a577&_nc_ohc=zoKDGdyRGA4AX_7cdz5&_nc_ht=scontent-jnb1-1.xx&oh=a35f95e82a7ea3d4490224b87511f452&oe=5EB7B3FB" alt="Abdullah">
+          <div class="container">
+
+            <h2 style="text-align:center">Abdullah Esmael</h2>
+            <p class="title">Engineering student & back-end developer</p>
+
+            <p>20797540@sun.ac.za</p>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="column">
+        <div class="card">
+          <img style= "width: 100%" src="https://scontent-jnb1-1.xx.fbcdn.net/v/t1.0-9/11351284_953321814699795_8044386223400093016_n.jpg?_nc_cat=107&_nc_sid=85a577&_nc_oc=AQlHkojtAZKSNvBSYtMeKK3sOXpLLZjXZ4EIuZDulql2757jwP-kx8k2w1qqpkW7RN4&_nc_ht=scontent-jnb1-1.xx&oh=8800f9b52641f15b1e9405095d9e07bd&oe=5EB700BB" alt="jaak">
+          <div class="container">
+
+            <h2 style="text-align:center">Jacques van Wyk</h2>
+            <p class="title">Engineering student & all-rounder</p>
+
+            <p>20774613@sun.ac.za</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img style= "width: 100%" src="https://media-exp1.licdn.com/dms/image/C5603AQG9dR97Aj9A1Q/profile-displayphoto-shrink_200_200/0?e=1591833600&v=beta&t=LTGSjbA1ldOLIr6CplK498FnXTsk3_uuwX9ilH42we4" alt="Jeandre">
+          <div class="container">
+
+            <h2 style="text-align:center">Jeandre de Bruyn</h2>
+            <p class="title">Engineering student & back-end developer</p>
+
+            <p>19768206@sun.ac.za</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img style= "width: 100%" src="https://scontent-jnb1-1.cdninstagram.com/v/t51.2885-19/s150x150/92513927_507402346606513_139003674482442240_n.jpg?_nc_ht=scontent-jnb1-1.cdninstagram.com&_nc_ohc=BD4w3KWHgesAX_OGGwc&oh=6e7b2f7df3ed9b82f1e502d097c20ef1&oe=5EBA587F" alt="Ronaldo">
+          <div class="container">
+
+            <h2 style="text-align:center">Ronaldo Cedras</h2>
+            <p class="title">Barely a student & front-end developer</p>
+
+            <p>20688105@sun.ac.za</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img style= "width: 100%" src="https://i0.wp.com/boingboing.net/images/fsmtiny.jpeg?resize=135%2C118" alt="FSM">
+          <div class="container">
+
+            <h2 style="text-align:center">Flying Spaghetti M.</h2>
+            <p class="title">Inspirator-inator</p>
+            <p>Wait, this thing isn't part of the team. He is an IMPASTA</p>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}
